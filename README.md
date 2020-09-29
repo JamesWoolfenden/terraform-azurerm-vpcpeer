@@ -26,22 +26,25 @@ The second run pushes its own state to the state store.
 This project is 100% Open Source and licensed under the [APACHE2](LICENSE).
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
 
 ## Providers
 
-| Name    | Version |
-| ------- | ------- |
-| azurerm | n/a     |
+| Name | Version |
+|------|---------|
+| azurerm | n/a |
 
 ## Inputs
 
-| Name             | Description | Type     | Default  | Required |
-| ---------------- | ----------- | -------- | -------- | :------: |
-| peername         | n/a         | `string` | `"peer"` |    no    |
-| resource_group_a | n/a         | `any`    | n/a      |   yes    |
-| resource_group_b | n/a         | `any`    | n/a      |   yes    |
-| vnet_name_a      | n/a         | `any`    | n/a      |   yes    |
-| vnet_name_b      | n/a         | `any`    | n/a      |   yes    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| peername | n/a | `string` | `"peer"` | no |
+| resource\_group\_a | n/a | `any` | n/a | yes |
+| resource\_group\_b | n/a | `any` | n/a | yes |
+| vnet\_name\_a | n/a | `any` | n/a | yes |
+| vnet\_name\_b | n/a | `any` | n/a | yes |
 
 ## Outputs
 
