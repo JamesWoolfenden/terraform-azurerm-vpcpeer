@@ -4,7 +4,9 @@
 *.zip
 
 # Module directory
+.terraform/
 .terraform
+__pycache__/
 .idea
 *.iml
 *.orig
