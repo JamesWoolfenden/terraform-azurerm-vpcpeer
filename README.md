@@ -13,10 +13,10 @@
 module "peer" {
   source                   = "JamesWoolfenden/peer/azure"
   version                  = "0.2.0"
-  resource_group_a=data.azurerm_resource_group.example.name
-  resource_group_b=data.azurerm_resource_group.example.name
-  vnet_name_a="examplea"
-  vnet_name_b="exampleb"
+  resource_group_a         = data.azurerm_resource_group.example.name
+  resource_group_b         = data.azurerm_resource_group.example.name
+  vnet_name_a              = "examplea"
+  vnet_name_b              = "exampleb"
 }
 ```
 
@@ -40,6 +40,17 @@ No requirements.
 |------|---------|
 | azurerm | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [azurerm_virtual_network](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/virtual_network) |
+| [azurerm_virtual_network_peering](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network_peering) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -53,7 +64,6 @@ No requirements.
 ## Outputs
 
 No output.
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
