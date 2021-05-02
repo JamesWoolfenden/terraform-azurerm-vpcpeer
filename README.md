@@ -38,32 +38,34 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| azurerm | n/a |
+| <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | n/a |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [azurerm_virtual_network](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/virtual_network) |
-| [azurerm_virtual_network_peering](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network_peering) |
+| Name | Type |
+|------|------|
+| [azurerm_virtual_network_peering.examplea](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network_peering) | resource |
+| [azurerm_virtual_network_peering.exampleb](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network_peering) | resource |
+| [azurerm_virtual_network.examplea](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/virtual_network) | data source |
+| [azurerm_virtual_network.exampleb](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/virtual_network) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| peername | n/a | `string` | `"peer"` | no |
-| resource\_group\_a | n/a | `any` | n/a | yes |
-| resource\_group\_b | n/a | `any` | n/a | yes |
-| vnet\_name\_a | n/a | `any` | n/a | yes |
-| vnet\_name\_b | n/a | `any` | n/a | yes |
+| <a name="input_peername"></a> [peername](#input\_peername) | n/a | `string` | `"peer"` | no |
+| <a name="input_resource_group_a"></a> [resource\_group\_a](#input\_resource\_group\_a) | n/a | `any` | n/a | yes |
+| <a name="input_resource_group_b"></a> [resource\_group\_b](#input\_resource\_group\_b) | n/a | `any` | n/a | yes |
+| <a name="input_vnet_name_a"></a> [vnet\_name\_a](#input\_vnet\_name\_a) | n/a | `any` | n/a | yes |
+| <a name="input_vnet_name_b"></a> [vnet\_name\_b](#input\_vnet\_name\_b) | n/a | `any` | n/a | yes |
 
 ## Outputs
 
-No output.
+No outputs.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
