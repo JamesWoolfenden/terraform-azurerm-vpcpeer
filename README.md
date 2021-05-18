@@ -50,18 +50,16 @@ No modules.
 |------|------|
 | [azurerm_virtual_network_peering.examplea](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network_peering) | resource |
 | [azurerm_virtual_network_peering.exampleb](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/virtual_network_peering) | resource |
-| [azurerm_virtual_network.examplea](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/virtual_network) | data source |
-| [azurerm_virtual_network.exampleb](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/virtual_network) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_azurerm_virtual_networka"></a> [azurerm\_virtual\_networka](#input\_azurerm\_virtual\_networka) | n/a | <pre>object({<br>    name                = string,<br>    id                  = string,<br>    resource_group_name = string,<br>    address_space       = list(string),<br>    guid                = string,<br>  })</pre> | n/a | yes |
+| <a name="input_azurerm_virtual_networkb"></a> [azurerm\_virtual\_networkb](#input\_azurerm\_virtual\_networkb) | n/a | <pre>object({<br>    name                = string,<br>    id                  = string,<br>    resource_group_name = string,<br>    address_space       = list(string),<br>    guid                = string,<br>  })</pre> | n/a | yes |
 | <a name="input_peername"></a> [peername](#input\_peername) | n/a | `string` | `"peer"` | no |
 | <a name="input_resource_group_a"></a> [resource\_group\_a](#input\_resource\_group\_a) | n/a | `any` | n/a | yes |
 | <a name="input_resource_group_b"></a> [resource\_group\_b](#input\_resource\_group\_b) | n/a | `any` | n/a | yes |
-| <a name="input_vnet_name_a"></a> [vnet\_name\_a](#input\_vnet\_name\_a) | n/a | `any` | n/a | yes |
-| <a name="input_vnet_name_b"></a> [vnet\_name\_b](#input\_vnet\_name\_b) | n/a | `any` | n/a | yes |
 
 ## Outputs
 

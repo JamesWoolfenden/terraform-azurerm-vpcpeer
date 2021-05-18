@@ -31,4 +31,3 @@ variable "azurerm_virtual_networkb" {
     guid                = string,
   })
 }
-
