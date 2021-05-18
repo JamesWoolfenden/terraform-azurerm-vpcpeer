@@ -5,8 +5,8 @@ resource "azurerm_resource_group" "example" {
 
 module "networka" {
   source           = "JamesWoolfenden/vnet/azurerm"
-  version          = "0.0.24"
-  address_prefixes = ["10.2.0.0/16"]
+  version          = "0.0.26"
+  address_prefixes = ["10.2.0.0/24", "10.2.1.0/24", "10.2.2.0/24"]
   names            = ["web", "app", "data"]
   vnet = {
     name          = "examplea"
@@ -19,8 +19,8 @@ module "networka" {
 
 module "networkb" {
   source           = "JamesWoolfenden/vnet/azurerm"
-  version          = "0.0.24"
-  address_prefixes = ["10.1.0.0/16"]
+  version          = "0.0.26"
+  address_prefixes = ["10.1.0.0/16", "10.1.1.0/24", "10.1.2.0/24"]
   names            = ["web", "app", "data"]
   vnet = {
     name          = "exampleb"

@@ -12,5 +12,23 @@ resource "azurerm_virtual_network_peering" "exampleb" {
   remote_virtual_network_id = var.azurerm_virtual_networka.id
 }
 
-variable "azurerm_virtual_networka" {}
-variable "azurerm_virtual_networkb" {}
+variable "azurerm_virtual_networka" {
+  type = object({
+    name                = string,
+    id                  = string,
+    resource_group_name = string,
+    address_space       = list(string),
+    guid                = string,
+  })
+}
+
+variable "azurerm_virtual_networkb" {
+  type = object({
+    name                = string,
+    id                  = string,
+    resource_group_name = string,
+    address_space       = list(string),
+    guid                = string,
+  })
+}
+
